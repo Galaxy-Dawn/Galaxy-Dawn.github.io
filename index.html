@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaorui Zhang | AI Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link id="google-fonts" rel="stylesheet" href="">
+    <link rel="stylesheet" href="style-academic.css" id="theme-style">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">ZGR</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#publications">Publications</a>
+                <a href="#projects">Projects</a>
+                <a href="#news">News</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="nav-btn style-toggle" id="styleToggle" aria-label="Toggle style">
+                    <svg class="nav-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                    <span class="nav-btn-label" id="styleLabel">Natural</span>
+                </button>
+                <span class="nav-divider"></span>
+                <button class="nav-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="nav-btn-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="nav-btn-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                    <span class="nav-btn-label theme-label">Dark</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / About Section -->
+    <section id="about" class="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Gaorui Zhang</h1>
+                <p class="hero-title">PhD student at Zhejiang University</p>
+                <p class="hero-description">
+                    I am a first-year Ph.D. student in <span class="highlight">Computer Science and Technology</span> at
+                    <a href="http://www.zju.edu.cn/" target="_blank">Zhejiang University</a>, advised by Prof.
+                    <a href="http://yangy.org/" target="_blank">Yang Yang</a>. I received my B.S. in Artificial Intelligence from
+                    <a href="http://www.suda.edu.cn/" target="_blank">Soochow University</a>.
+                </p>
+                <p class="hero-description">
+                    My research focuses on <span class="highlight">neural decoding</span> from invasive brain signals,
+                    including speech and visual decoding, as well as cross-subject transfer learning.
+                </p>
+                <p class="hero-description">
+                    Feel free to reach out if you're interested in collaboration.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">Publications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">166+</span>
+                        <span class="stat-label">GitHub Stars</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#publications" class="btn btn-primary">View Publications</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="assets/profile.jpeg" alt="Gaorui Zhang" class="profile-photo">
+                </div>
+            </div>
+        </div>
+
+        <!-- About Cards Grid -->
+        <div class="about-cards">
+            <!-- Research Interests Card -->
+            <div class="about-card">
+                <div class="about-card-header">
+                    <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                    <h3>Research Interests</h3>
+                </div>
+                <div class="about-card-content">
+                    <span class="interest-tag">Brain-Computer Interface</span>
+                    <span class="interest-tag">Neural Decoding</span>
+                    <span class="interest-tag">Deep Learning</span>
+                </div>
+            </div>
+
+            <!-- Links Card -->
+            <div class="about-card">
+                <div class="about-card-header">
+                    <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                    </svg>
+                    <h3>Academic Links</h3>
+                </div>
+                <div class="about-card-content links-list">
+                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=9M7DyKMAAAAJ" class="academic-link" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/></svg>
+                        Google Scholar
+                    </a>
+                    <a href="https://github.com/Galaxy-Dawn" class="academic-link" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://orcid.org/0009-0000-7895-1242" class="academic-link" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 01-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h1.389v1.444h.028c.194-.481.947-1.528 2.194-1.528 1.528 0 2.833.947 2.833 3.472v6.653h-1.444v-6.125c0-1.194-.422-2.014-1.5-2.014-1.028 0-1.639.694-1.917 1.361-.083.194-.111.472-.111.75v6.028H10.209V7.416z"/></svg>
+                        ORCID
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Arrow -->
+        <a href="#publications" class="scroll-arrow" aria-label="Scroll to publications">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Publications
+            </h2>
+            <div class="publications-list">
+                <article class="pub-card" data-year="2025">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <div class="pub-header">
+                            <h3 class="pub-title">NeuroSketch: An Effective Framework for Neural Decoding via Systematic Architectural Optimization</h3>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/pdf/2512.09524" class="pub-link" target="_blank">PDF</a>
+                                <a href="https://github.com/Galaxy-Dawn/NeuroSketch" class="pub-link" target="_blank">Code</a>
+                            </div>
+                        </div>
+                        <p class="pub-authors"><strong>Gaorui Zhang</strong>, Zhizhang Yuan, Jialan Yang, Junru Chen, Li Meng, Yang Yang</p>
+                        <p class="pub-venue">arXiv 2025</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Projects
+            </h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3 class="project-title">NeuroSketch</h3>
+                    <p class="project-desc">An effective framework for neural decoding via systematic architectural optimization.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">BCI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Galaxy-Dawn/NeuroSketch" class="project-link" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <span class="project-stars">
+                            <img src="https://img.shields.io/github/stars/Galaxy-Dawn/NeuroSketch?style=flat&logo=github" alt="GitHub stars">
+                        </span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3 class="project-title">claude-scholar</h3>
+                    <p class="project-desc">A comprehensive Claude Code configuration for data science, AI research, and academic writing.</p>
+                    <div class="project-tags">
+                        <span class="tag">Claude</span>
+                        <span class="tag">Research</span>
+                        <span class="tag">Workflow</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Galaxy-Dawn/claude-scholar" class="project-link" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <span class="project-stars">
+                            <img src="https://img.shields.io/github/stars/Galaxy-Dawn/claude-scholar?style=flat&logo=github" alt="GitHub stars">
+                        </span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3 class="project-title">academic-homepage-templates</h3>
+                    <p class="project-desc">A collection of beautiful, responsive academic homepage templates for researchers.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Template</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Galaxy-Dawn/academic-homepage-templates" class="project-link" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <span class="project-stars">
+                            <img src="https://img.shields.io/github/stars/Galaxy-Dawn/academic-homepage-templates?style=flat&logo=github" alt="GitHub stars">
+                        </span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> News
+            </h2>
+            <div class="news-timeline">
+                <div class="news-item">
+                    <div class="news-date">Dec 2025</div>
+                    <div class="news-content">
+                        <span class="news-badge">Paper</span>
+                        <span class="news-text">Introduced NeuroSketch-SD for speech decoding (~20M parameters).</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Dec 2025</div>
+                    <div class="news-content">
+                        <span class="news-badge">Paper</span>
+                        <span class="news-text">NeuroSketch is now public!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="experience" class="section section-alt">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Experience
+            </h2>
+            <div class="experience-grid">
+                <div class="exp-column">
+                    <h3 class="exp-category">Education</h3>
+                    <div class="exp-item">
+                        <div class="exp-period">2025 - Present</div>
+                        <h4 class="exp-title">PhD Student</h4>
+                        <p class="exp-org">Zhejiang University</p>
+                        <p class="exp-desc">Advisor: <a href="https://openreview.net/profile?id=~Yang_Yang35" target="_blank">Yang Yang</a></p>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-period">2021 - 2025</div>
+                        <h4 class="exp-title">Undergraduate Student</h4>
+                        <p class="exp-org">Suzhou University</p>
+                    </div>
+                </div>
+                <div class="exp-column">
+                    <h3 class="exp-category">Work</h3>
+                    <div class="exp-item">
+                        <p class="exp-desc">Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Contact
+            </h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    Interested in collaboration or have questions about my research? Feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:gaoruizhang@gmail.com" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span>gaoruizhang@gmail.com</span>
+                    </a>
+                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=9M7DyKMAAAAJ" target="_blank" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+                        </svg>
+                        <span>Google Scholar</span>
+                    </a>
+                    <a href="https://github.com/Galaxy-Dawn" target="_blank" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Gaorui Zhang. Built with passion for research.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
