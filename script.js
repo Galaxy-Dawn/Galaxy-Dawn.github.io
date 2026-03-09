@@ -95,3 +95,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Keep the hero "GitHub Stars" stat in sync with selected repos.
+async function updateGitHubStarsTotal() {
+    const totalEl = document.getElementById('github-stars-total');
+    if (!totalEl) return;
+
+    const repos = [
+        'Galaxy-Dawn/NeuroSketch',
+        'Galaxy-Dawn/claude-scholar',
+        'Galaxy-Dawn/academic-homepage-templates',
+    ];
+
+    try {
+        const stars = await Promise.all(
+            repos.map(async (repo) => {
+                const res = await fetch(`https://api.github.com/repos/${repo}`);
+                if (!res.ok) throw new Error(`Failed to fetch ${repo}`);
+                const data = await res.json();
+                return Number(data.stargazers_count || 0);
+            })
+        );
+        const total = stars.reduce((acc, n) => acc + n, 0);
+        totalEl.textContent = `${total}+`;
+    } catch (_) {
+        // Keep existing fallback text when API is rate-limited or unavailable.
+    }
+}
+
+updateGitHubStarsTotal();
