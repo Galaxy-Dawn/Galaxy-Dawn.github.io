@@ -105,6 +105,7 @@ async function updateGitHubStarsTotal() {
         'Galaxy-Dawn/NeuroSketch',
         'Galaxy-Dawn/claude-scholar',
         'Galaxy-Dawn/academic-homepage-templates',
+        'Galaxy-Dawn/pubtab',
     ];
 
     try {
