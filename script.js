@@ -106,6 +106,7 @@ async function updateGitHubStarsTotal() {
         'Galaxy-Dawn/claude-scholar',
         'Galaxy-Dawn/academic-homepage-templates',
         'Galaxy-Dawn/pubtab',
+        'Galaxy-Dawn/pubfig',
     ];
 
     try {
